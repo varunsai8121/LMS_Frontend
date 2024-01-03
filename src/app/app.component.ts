@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class AppComponent  implements OnInit{
   title = 'frontend_v1';
   users: any;
- 
+  showLoginPage = true;
   constructor(private http:HttpClient,private router:Router){
 
   }
@@ -24,6 +24,12 @@ export class AppComponent  implements OnInit{
     });
 
   }
+  login() {
+    // Navigate to the new page and hide the login page
+    this.router.navigate(['/land']);
+    this.showLoginPage = false;
+  }
+
   // navigateToLoginPage(): void {
   //   // Navigate to the "login-page" component
   //   this.router.navigate(['/start']);

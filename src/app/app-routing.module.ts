@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  {path:'',component:AppComponent},
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   {path:'start',component:LandingPageComponent}
 ];
 
