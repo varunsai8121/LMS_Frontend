@@ -1,130 +1,17 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-
-    
-<!------ Include the above in your HEAD tag ---------->
-
-
- <div class="container login-container">
-            <div class="row">
-                <div class="col-md-6 login-form-1">
-                    <h3>Login</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                        </div>
-                            
-                            <div class="form-group">
-                                
-                                
-                                <a routerLink="/start" class="btn btn-primary"  role="button">Login</a>
-
-                            </div>
-                      
-                            <div class="form-group">
-                                <a href="#" class="ForgetPwd">Forget Password?</a>
-                               
-                            </div>
-                    </form>
-                    <ul>
-                    </ul>
-                    <li *ngFor="let usr of users">
-                        {{usr.id}}- {{usr.name}}
-                    </li>
-                </div>
-            </div>
-            
-        
-        
-        <!DOCTYPE html>
-        <html lang="en">
-            <head>
-                </head>
-                    
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Absentify</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Start</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Open Requests</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Activity</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    
-                    <hr style="margin: 0;">
-                    
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Overview</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">My Calendar</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Settings</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Insights</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <hr style="margin: 0;">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-thick">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Overview</a>
-                          
-                            </div>
-                    </nav>
-    
-                <body>
-                    <hr>
-                    
-                    <div class="mt-15">
-                        <div class="jumbotron jumbotron-fluid">
-                            <div class="container">
-                                <div class="btn-group ms-auto">
-                                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    dropdown
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" >Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                      <li><hr class="dropdown-divider"></li>
-                                      <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                          </div>
-                    </div>
-                    
-              
-                
-                            
+<div style="text-align:center">
+    <h1>{{title}}</h1>
+    <p>Beyond Visualization Discover the multi-dimensional nature of insights</p>
+    <button>Explorer</button>
+    <button>Summarize</button>
+    <button>Analyze</button>
+    <br>
+    <br>
+    <div>
+       <label for="username">Username:</label><br>
+       <input type="text" id="username" name="username"><br>
+       <label for="password">Password:</label><br>
+       <input type="password" id="password" name="password"><br>
+       <button (click)="login()">Login</button>
+       <!-- <button (click)="forgotPassword()">Forgot Password</button> -->
+    </div>
+   </div>

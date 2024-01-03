@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
  
 })
 export class AppComponent  implements OnInit{
+login() {
+throw new Error('Method not implemented.');
+}
   title = 'frontend_v1';
   users: any;
  
