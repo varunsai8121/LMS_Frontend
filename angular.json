@@ -37,12 +37,8 @@
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
-<<<<<<< HEAD
                   "maximumError": "5mb"
                   
-=======
-                  "maximumError": "2mb"
->>>>>>> bb544e806e70991a3890962b559e1c73d670c191
                 },
                 {
                   "type": "anyComponentStyle",

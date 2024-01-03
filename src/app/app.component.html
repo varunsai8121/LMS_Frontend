@@ -1,4 +1,4 @@
-    
+<!--     
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,32 +8,33 @@
     <title>Login Page</title>
 </head>
 <body>
+    <router-outlet></router-outlet>
     
-
-
-
-
-    <!-- my code -->
- 
     <div class="login-container">
-        <img  class="images" src="./assets/images/download.jpg"/>
+        <img  class="images" src="assets/images/logo.jpeg "/>
         <h2>Leave Tracker</h2>
         <form>
-           
+            <div *ngIf="showLoginPage">
+            
             <div class="form-group">
                 <input type="text" class="form-control" id="username" name="username" placeholder="Username">
-           
-                <div id="usernameErrorMsg" class="text-danger mm-font-semibold"></div>
-              </div>
-
-              <div class="form-group">
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                 
-                <div id="passwordErrorMsg" class="text-danger text-left mm-font-semibold"></div>
-              </div>
-            <button type="submit">Login</button>
+                <div id="usernameErrorMsg" class="text-danger mm-font-semibold"></div>
+            </div>
+            
+              <div class="form-group">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                  
+                  <div id="passwordErrorMsg" class="text-danger text-left mm-font-semibold"></div>
+                </div>
+                <button type="submit" onclick="login()">Login</button>
+            </div>
         </form>
         
-    </div>
+</div>
 </body>
-
+ -->
+<div>
+    <router-outlet></router-outlet>
+    
+</div>

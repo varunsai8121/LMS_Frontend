@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from './models/user';
 
 @Component({
   selector: 'app-root',
@@ -9,29 +10,23 @@ import { Router } from '@angular/router';
  
 })
 export class AppComponent  implements OnInit{
-login() {
-throw new Error('Method not implemented.');
-}
+
   title = 'frontend_v1';
-  users: any;
-  showLoginPage = true;
+  user: any;
+  
   constructor(private http:HttpClient,private router:Router){
 
   }
   
   ngOnInit(): void {
     this.http.get('http://localhost:5133/api/user').subscribe({
-      next: response => this.users = response,
+      next: response => this.user = response,
       error: error => console.log(error),
       complete: () => console.log('Request completed')
     });
 
   }
-  login() {
-    // Navigate to the new page and hide the login page
-    this.router.navigate(['/land']);
-    this.showLoginPage = false;
-  }
+  
 
   // navigateToLoginPage(): void {
   //   // Navigate to the "login-page" component

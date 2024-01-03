@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
 
 @Component({
@@ -7,6 +8,8 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  
 user: any;
+
 
 }
