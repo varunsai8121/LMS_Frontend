@@ -10,7 +10,6 @@ import { MyCalendarComponent } from './Components/my-calendar/my-calendar.compon
 import { CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { LoginComponent } from './Components/login/login.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

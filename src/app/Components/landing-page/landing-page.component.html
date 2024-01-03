@@ -1,36 +1,87 @@
-   
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<head>
+</head>
     
-     <title>Login Page</title>
- </head>
- <body>
-     
-     
-     <div class="login-container">
-         <img  class="images" src="assets/images/logo.jpeg "/>
-         <h2>Leave Tracker</h2>
-         <form>
-             <div *ngIf="showLoginPage">
-             
-             <div class="form-group">
-                 <input type="text" class="form-control" id="username" name="username" placeholder="Username">
-                 
-                 <div id="usernameErrorMsg" class="text-danger mm-font-semibold"></div>
-             </div>
-             
-               <div class="form-group">
-                   <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                   
-                   <div id="passwordErrorMsg" class="text-danger text-left mm-font-semibold"></div>
-                 </div>
-                 <button type="button" class="btn btn-primary" (click)="login()">Login</button>
-             </div>
-         </form>
-         
- </div>
- </body>
-  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Absentify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Open Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <hr style="margin: 0;">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Insights</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr style="margin: 0;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-thick">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Overview</a>
+          
+            </div>
+    </nav>
+
+<body>
+    <hr>
+    
+    <div class="mt-15">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="btn-group ms-auto">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" >Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+    </div>
+    
+
+
+          
+    

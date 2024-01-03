@@ -8,6 +8,15 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  constructor(private router:Router){
+    
+  }
+  showLoginPage = true;
+  login() {
+    // Navigate to the new page and hide the login page
+    this.router.navigate(['start']);
+    this.showLoginPage = false;
+  }
   
 user: any;
 

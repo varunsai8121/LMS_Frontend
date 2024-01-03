@@ -1,0 +1,38 @@
+   
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <title>Login Page</title>
+ </head>
+ <body>
+     
+     
+     <div class="login-container"> 
+         <div style="text-align: center;"><img  class="images" src="assets/images/logo.jpeg"  alt="Logo" style="width: 300px; height: auto;" >
+         </div>
+         <hr>
+            <h2>Leave Tracker</h2>
+         <form>
+             <div *ngIf="showLoginPage">
+             
+             <div class="form-group">
+                 <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                 
+                 <div id="usernameErrorMsg" class="text-danger mm-font-semibold"></div>
+             </div>
+             
+               <div class="form-group">
+                   <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                   
+                   <div id="passwordErrorMsg" class="text-danger text-left mm-font-semibold"></div>
+                 </div>
+                 <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+             </div>
+         </form>
+         
+ </div>
+ </body>
+  
