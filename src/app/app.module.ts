@@ -15,6 +15,7 @@ import { LoginComponent } from './Components/login/login.component';
     AppComponent,
     LandingPageComponent,
     LoginComponent,
+    MyCalendarComponent
    
 
 

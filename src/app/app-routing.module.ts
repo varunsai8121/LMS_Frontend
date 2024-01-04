@@ -8,7 +8,8 @@ import { MyCalendarComponent } from './Components/my-calendar/my-calendar.compon
 
 const routes: Routes = [
   {path:'start',component:LandingPageComponent},
-  { path: '', component:LoginComponent}
+  { path: '', component:LoginComponent},
+  {path:'calendar',component:MyCalendarComponent}
 
 ];
 
