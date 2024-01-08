@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyCalendarComponent } from './Components/my-calendar/my-calendar.component';
 import { CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { LoginComponent } from './Components/login/login.component';
+import { AccountService } from './_services/account.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { LoginComponent } from './Components/login/login.component';
     BrowserAnimationsModule,
     CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule
   ],
-  providers: [],
+  providers: [
+    AccountService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
