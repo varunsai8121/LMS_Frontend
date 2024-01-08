@@ -26,7 +26,11 @@ import { LoginComponent } from './Components/login/login.component';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule
+    CalendarModule,
+    DatePickerModule,
+    TimePickerModule,
+    DateRangePickerModule,
+    DateTimePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
