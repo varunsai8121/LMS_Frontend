@@ -1,0 +1,24 @@
+
+<div class="calendar-container">
+    <span style="font-weight: bold;">{{ getCurrentMonth() }}</span>
+    <div class="button-container">
+      <button (click)="prevMonth()">Previous Month</button>
+      <button (click)="nextMonth()">Next Month</button>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th *ngFor="let dayName of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']">{{ dayName }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let week of calendar">
+          <td *ngFor="let day of week" (click)="dayClicked(day)">
+            {{ day ? day.getDate() : '' }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

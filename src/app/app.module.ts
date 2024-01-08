@@ -9,14 +9,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyCalendarComponent } from './Components/my-calendar/my-calendar.component';
 import { CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { LoginComponent } from './Components/login/login.component';
+
 import { AccountService } from './_services/account.service';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     LoginComponent,
-    MyCalendarComponent
+    MyCalendarComponent,
+    
+
+
    
 
 
@@ -27,7 +37,15 @@ import { AccountService } from './_services/account.service';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule
+    CalendarModule,
+    DatePickerModule,
+    TimePickerModule,
+    TooltipModule.forRoot(),
+    DateRangePickerModule,
+    DateTimePickerModule,
+    NgbModule,
+  //  DatePickerModule.forRoot(),
+
   ],
   providers: [
     AccountService,
