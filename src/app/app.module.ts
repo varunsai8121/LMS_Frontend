@@ -14,6 +14,7 @@ import { LoginComponent } from './Components/login/login.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { HorizontalCalendarComponent } from './Components/horizontal-calendar/horizontal-calendar.component';
 
 
 
@@ -24,6 +25,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     LandingPageComponent,
     LoginComponent,
     MyCalendarComponent,
+    HorizontalCalendarComponent,
     
 
 

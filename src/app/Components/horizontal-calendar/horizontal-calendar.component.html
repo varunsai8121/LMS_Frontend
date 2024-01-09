@@ -1,0 +1,45 @@
+<!-- 
+<div class="calendar-container">
+    <span style="font-weight: bold;">{{ getCurrentMonth() }}</span>
+    <div class="button-container">
+        <button (click)="prevMonth()">Previous Month</button>
+        <button (click)="nextMonth()">Next Month</button>
+    </div>
+
+    <div class="weeks-container">
+        <div class="day-names">
+            <div *ngFor="let dayName of dayNamesStartingFromMonday()" class="day-name">{{ dayName }}</div>
+        </div>
+    </div>
+
+    <div class="weeks-container">
+        <div *ngFor="let week of calendar" class="week">
+            <div *ngFor="let day of week" class="day" [ngClass]="{'inactive': day < currentDate}" (click)="dayClicked(day)">
+                <div class="date">{{ day ? day.getDate() : '' }}</div>
+            </div>
+        </div>
+    </div>
+</div> 
+ -->
+
+ <div class="calendar-container">
+    <span style="font-weight: bold;">{{ getCurrentMonth() }}</span>
+    <div class="button-container">
+        <button (click)="prevMonth()">Previous Month</button>
+        <button (click)="nextMonth()">Next Month</button>
+    </div>
+
+    <div class="weeks-container">
+        <div class="day-names">
+            <div *ngFor="let dayName of dayNamesStartingFromMonday()" class="day-name">{{ dayName }}</div>
+        </div>
+    </div>
+
+    <div class="weeks-container">
+        <div *ngFor="let week of calendar" class="week">
+            <div *ngFor="let day of week" class="day" [ngClass]="{'inactive': day && (day.getMonth() !== currentDate.getMonth() || day < currentDate)}" (click)="dayClicked(day)">
+                <div class="date">{{ day ? day.getDate() : '' }}</div>
+            </div>
+        </div>
+    </div>
+</div>
