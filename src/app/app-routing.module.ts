@@ -4,12 +4,16 @@ import { LandingPageComponent } from './Components/landing-page/landing-page.com
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Components/login/login.component';
 import { MyCalendarComponent } from './Components/my-calendar/my-calendar.component';
+import { LeaveFormComponent } from './Components/leave-form/leave-form.component';
 
 
 const routes: Routes = [
   {path:'start',component:LandingPageComponent},
   { path: '', component:LoginComponent},
-  {path:'calendar',component:MyCalendarComponent}
+  {path:'calendar',component:MyCalendarComponent},
+  {
+    path:'leaveform',component:LeaveFormComponent
+  }
 
 ];
 

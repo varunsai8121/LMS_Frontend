@@ -1,0 +1,41 @@
+<!-- my-form.component.html -->
+
+<div class="form-container">
+    <h2>Leave Request Form</h2>
+    <form (ngSubmit)="onSubmit()" class="form">
+      <div class="form-group">
+        <div class="left-column">
+          <label for="userName">User Name:</label>
+          <input type="text" id="userName" name="userName" [(ngModel)]="formData.UserName" required>
+        </div>
+  
+      
+            <div class="row">
+                <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+                  <input type="text"
+                         placeholder="Start Date "
+                         class="form-control"
+                         bsDatepicker>
+                </div>
+                <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+                    <input type="text"
+                           placeholder="End Date"
+                           class="form-control"
+                           bsDatepicker>
+                  </div>
+                
+              </div>
+        </div>
+   
+  
+      <div>
+        <label for="reason">Reason:</label>
+        <textarea id="reason" name="reason" [(ngModel)]="formData.Reason" required></textarea>
+      </div>
+  
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  

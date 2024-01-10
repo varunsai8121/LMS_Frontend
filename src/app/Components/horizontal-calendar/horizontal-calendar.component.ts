@@ -3,6 +3,7 @@ import { formatDate } from '@angular/common';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DatePickerComponent } from '../date-picker/date-picker.component';
+import { LeaveFormComponent } from '../leave-form/leave-form.component';
 
 @Component({
   selector: 'app-horizontal-calendar',
@@ -179,7 +180,7 @@ currentDate: Date = new Date();
 
 
   openPopup(date: Date) {
-    const modalRef = this.modalService.open(DatePickerComponent);
+    const modalRef = this.modalService.open(LeaveFormComponent);
     modalRef.componentInstance.selectedDate = date;
   }
   

@@ -9,12 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyCalendarComponent } from './Components/my-calendar/my-calendar.component';
 import { CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { LoginComponent } from './Components/login/login.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 // import { AccountService } from './_services/account.service';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { HorizontalCalendarComponent } from './Components/horizontal-calendar/horizontal-calendar.component';
+import { LeaveFormComponent } from './Components/leave-form/leave-form.component';
+
 
 
 
@@ -26,6 +29,8 @@ import { HorizontalCalendarComponent } from './Components/horizontal-calendar/ho
     LoginComponent,
     MyCalendarComponent,
     HorizontalCalendarComponent,
+    LeaveFormComponent,
+
     
 
 
@@ -46,6 +51,7 @@ import { HorizontalCalendarComponent } from './Components/horizontal-calendar/ho
     DateRangePickerModule,
     DateTimePickerModule,
     NgbModule,
+    BsDatepickerModule.forRoot(),
   //  DatePickerModule.forRoot(),
 
   ],
