@@ -1,0 +1,27 @@
+/* my-form.component.css */
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+    gap: 20px; /* Adjust the gap between grid items as needed */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  }
+  
+  .left-column,
+  .right-column {
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    min-height: 65px; /* Adjust the min-height as needed to accommodate the placeholder text */
+  }
+  
+  .mat-datepicker-toggle {
+    margin-top: 25px; /* Adjust the margin as needed to separate the datepicker toggle buttons */
+  }
+  

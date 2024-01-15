@@ -1,0 +1,67 @@
+<div class="button-container">
+    <button (click)="prevMonth()">Previous Month</button>
+    <button (click)="nextMonth()">Next Month</button>
+  </div>
+
+  <span style="font-weight: bold;">{{ getCurrentMonth() }}</span>
+
+  <div class="weeks-container">
+    <div class="day-names">
+      <div *ngFor="let dayName of dayNamesStartingFromMonday()" class="day-name">{{ dayName }}</div>
+    </div>
+  </div>
+
+  <table class="names-calendar-table">
+    <tr>
+      <th>Name</th>
+      <th>Calendar</th>
+    </tr>
+    <tr *ngFor="let name of names">
+      <td>{{ name }}</td>
+      <td>
+        <div class="calendar-container">
+          <div class="days-container">
+            <div *ngFor="let week of calendar" class="week">
+              <div *ngFor="let day of week" class="day" [ngClass]="{'inactive': day && (day.getMonth() !== currentDate.getMonth() || day < currentDate)}" (click)="dayClicked(day)">
+                <div class="date">{{ day ? day.getDate() : '' }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+    <!-- <div class="button-container">
+        <button (click)="prevMonth()">Previous Month</button>
+        <button (click)="nextMonth()">Next Month</button>
+      </div>
+  
+      <span style="font-weight: bold;">{{ getCurrentMonth() }}</span>
+  
+      <div class="weeks-container">
+        <div class="day-names">
+          <div *ngFor="let dayName of dayNamesStartingFromMonday()" class="day-name">{{ dayName }}</div>
+        </div>
+      </div>
+  
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Calendar</th>
+        </tr>
+        <tr *ngFor="let name of names">
+          <td>{{ name }}</td>
+          <td>
+            <div class="calendar-container">
+              <div class="days-container">
+                <div *ngFor="let week of calendar" class="week">
+                  <div *ngFor="let day of week" class="day" [ngClass]="{'inactive': day && (day.getMonth() !== currentDate.getMonth() || day < currentDate)}" (click)="dayClicked(day)">
+                    <div class="date">{{ day ? day.getDate() : '' }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table> -->
