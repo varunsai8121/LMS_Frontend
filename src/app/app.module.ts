@@ -10,13 +10,17 @@ import { MyCalendarComponent } from './Components/my-calendar/my-calendar.compon
 import { CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { LoginComponent } from './Components/login/login.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
-
+import { MatDialogModule } from '@angular/material/dialog';
 // import { AccountService } from './_services/account.service';
+import { MatButtonModule } from '@angular/material/button';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { HorizontalCalendarComponent } from './Components/horizontal-calendar/horizontal-calendar.component';
 import { LeaveFormComponent } from './Components/leave-form/leave-form.component';
+import { PopupComponent } from './Components/popup/popup.component';
+import { ViewLeaveComponent } from './Components/view-leave/view-leave.component';
+
 
 
 
@@ -30,7 +34,9 @@ import { LeaveFormComponent } from './Components/leave-form/leave-form.component
     MyCalendarComponent,
     HorizontalCalendarComponent,
     LeaveFormComponent,
-
+    PopupComponent,
+    ViewLeaveComponent,
+ 
     
 
 
@@ -53,6 +59,9 @@ import { LeaveFormComponent } from './Components/leave-form/leave-form.component
     NgbModule,
     BsDatepickerModule.forRoot(),
   //  DatePickerModule.forRoot(),
+    MatDialogModule,
+    MatButtonModule,
+
 
   ],
   providers: [

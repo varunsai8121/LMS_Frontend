@@ -1,36 +1,43 @@
-
-
 .calendar-container {
-    max-width: 900px; 
+    max-width: 900px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; 
+    overflow-x: auto;
 }
+.main-container {
+    width: 300px;
+    height: auto;
 
+}
+ 
 .button-container {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
-
+ 
 .weeks-container {
     display: flex;
     flex-direction: row;
 }
-
+.days-container {
+    display: flex;
+    flex-direction: row;
+}
+ 
 .day-names {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     font-weight: bold;
 }
-
+ 
 .week {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-
+ 
 .day-name,
 .day {
     cursor: pointer;
@@ -39,7 +46,7 @@
     border: 1px solid #ddd;
     text-align: center;
 }
-
+ 
 .inactive {
     color: #ccc; /* Style for inactive days */
 }
