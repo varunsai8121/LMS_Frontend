@@ -19,10 +19,13 @@
 .weeks-container {
     display: flex;
     flex-direction: row;
+    /* max-width: 20px; */
 }
 .days-container {
     display: flex;
     flex-direction: row;
+    /* max-block-size: 200px; */
+   
 }
  
 .day-names {
@@ -30,6 +33,7 @@
     justify-content: space-around;
     padding: 10px;
     font-weight: bold;
+    /* max-width: 10px; */
 }
  
 .week {

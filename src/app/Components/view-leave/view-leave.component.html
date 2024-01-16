@@ -1,0 +1,55 @@
+<h1>View Leaves </h1>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Reason</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Example Data, Replace with Actual Data -->
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>2024-01-01</td>
+        <td>2024-01-05</td>
+        <td>Vacation</td>
+        <td class="approval-buttons">
+          <input type="checkbox" id="approve1"> <label for="approve1">Approved</label>
+          
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Doe</td>
+        <td>2024-02-15</td>
+        <td>2024-02-20</td>
+        <td>Sick Leave</td>
+        <td class="approval-buttons">
+          <input type="checkbox" id="approve2"> <label for="approve2">Approved</label>
+      
+        </td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+
+  <button id="submitBtn" onclick="submitActions()">Submit Actions</button>
+
+  <script>
+    function submitActions() {
+      // Collect selected actions and implement your logic
+      const selectedActions = [];
+      
+      document.querySelectorAll('input[type="checkbox"]:checked').forEach((checkbox) => {
+        selectedActions.push(checkbox.id);
+      });
+
+      // Implement your logic to handle selected actions
+      console.log('Selected Actions:', selectedActions);
+    }
+  </script>

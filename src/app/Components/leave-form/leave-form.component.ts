@@ -8,6 +8,7 @@ import { FormDetails } from 'src/app/models/FormDetails';
 })
 export class LeaveFormComponent {
   formData:FormDetails = {
+    UserId:0,
     UserName: '',
     startDate: '',
     endDate: '',

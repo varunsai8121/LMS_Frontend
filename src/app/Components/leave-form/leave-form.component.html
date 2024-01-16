@@ -6,10 +6,11 @@
       <div class="form-group">
         <div class="left-column">
           <label for="userName">User Name:</label>
+          <input type="text" id="userId" name="userId" [(ngModel)]="formData.UserId" required>
           <input type="text" id="userName" name="userName" [(ngModel)]="formData.UserName" required>
         </div>
   
-      
+<!--       
             <div class="row">
                 <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
                   <input type="text"
@@ -24,10 +25,23 @@
                            bsDatepicker>
                   </div>
                 
+              </div> -->
+              <div class="row">
+                <div class="col-xs-12 col-12 col-md-7 form-group mb-3">
+                  <input type="text"
+                         placeholder="Start Date"
+                         class="form-control custom-input-size"
+                         bsDatepicker>
+                </div>
+                <div class="col-xs-12 col-12 col-md-7 form-group mb-3">
+                  <input type="text"
+                         placeholder="End Date"
+                         class="form-control custom-input-size"
+                         bsDatepicker>
+                </div>
               </div>
-        </div>
-   
-  
+              
+        </div> 
       <div>
         <label for="reason">Reason:</label>
         <textarea id="reason" name="reason" [(ngModel)]="formData.Reason" required></textarea>

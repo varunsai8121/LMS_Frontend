@@ -24,4 +24,9 @@
   .mat-datepicker-toggle {
     margin-top: 25px; /* Adjust the margin as needed to separate the datepicker toggle buttons */
   }
+  .custom-input-size {
+    width: 100%; /* Adjust the width as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    /* Add any other custom styles as needed */
+  }
   
