@@ -20,6 +20,7 @@ import { HorizontalCalendarComponent } from './Components/horizontal-calendar/ho
 import { LeaveFormComponent } from './Components/leave-form/leave-form.component';
 import { PopupComponent } from './Components/popup/popup.component';
 import { ViewLeaveComponent } from './Components/view-leave/view-leave.component';
+import { ManagerLandingComponent } from './Components/manager-landing/manager-landing.component';
 
 
 
@@ -36,6 +37,7 @@ import { ViewLeaveComponent } from './Components/view-leave/view-leave.component
     LeaveFormComponent,
     PopupComponent,
     ViewLeaveComponent,
+    ManagerLandingComponent,
  
     
 

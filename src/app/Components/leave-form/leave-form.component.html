@@ -5,8 +5,9 @@
     <form (ngSubmit)="onSubmit()" class="form">
       <div class="form-group">
         <div class="left-column">
+          <label for="userId">User Id:</label>
+          <input type="text" id="userId" name="userId" [defaultValue]="null" [(ngModel)]="formData.UserId" required>
           <label for="userName">User Name:</label>
-          <input type="text" id="userId" name="userId" [(ngModel)]="formData.UserId" required>
           <input type="text" id="userName" name="userName" [(ngModel)]="formData.UserName" required>
         </div>
   
